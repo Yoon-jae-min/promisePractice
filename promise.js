@@ -15,6 +15,10 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise
     .then((result) => {
         console.log(`result = ${result}`);
+        return `선물은: ${result}`;
+    })
+    .then((result) => {
+        console.log(`result = ${result}`);
     })
     .catch((error) => {
         console.log(`error = ${error}`);
